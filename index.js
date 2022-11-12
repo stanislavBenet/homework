@@ -37,7 +37,6 @@
 //     console.log("error 404");
 // }
 
-
 //Version with use if..else..if..else;
 
 // const seasons = prompt("Enter number of month:");
@@ -103,10 +102,11 @@
 //   leadToNumber(inputUserAge) < 150
 // ) {
 //   console.log("super");
+// } else if (leadToNumber(inputUserAge) >= 150) {
+//   console.log("Dead man");
 // } else {
 //   console.log("404 try again");
 // }
-
 
 /*                Task 3
  Людина вводить годину([0-23]), ви виводите привітання
@@ -115,7 +115,7 @@
 [18 - 23) - good evening
 усе інше - good night
 усе невірне - 404 try again
-виконати 2 варіантами: через switch та if...else if...else і скажете який краще!!! */ 
+виконати 2 варіантами: через switch та if...else if...else і скажете який краще!!! */
 
 //Version with use switch;
 
@@ -158,15 +158,15 @@
 //   case "4":
 //   case "3":
 //   case "2":
-//   case "1":    
-//   case "0":    
+//   case "1":
+//   case "0":
 //     console.log("Good night!");
 //     break;
 //   default:
 //     console.log("404 try again");
 // }
 
-//Version with use if...else; 
+//Version with use if...else;
 
 // const userInputTimeOfDay = prompt("Enter time:");
 
