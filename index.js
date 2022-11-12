@@ -37,6 +37,7 @@
 //     console.log("error 404");
 // }
 
+
 //Version with use if..else..if..else;
 
 // const seasons = prompt("Enter number of month:");
