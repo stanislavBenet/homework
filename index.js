@@ -1,4 +1,4 @@
-/*          Task 1
+           /*          Task 1
 Людина вводить номер місяця, ви виводите пору року
 1,2,12 - winter
 3,4,5 - spring
@@ -8,7 +8,10 @@
 виконати 2 варіантами: через switch та if...else if...else
  */
 
+
+
 //Version with use switch;
+
 
 // const seasons = prompt("Enter number of month:");
 
@@ -37,7 +40,11 @@
 //     console.log("error 404");
 // }
 
+
+
 //Version with use if..else..if..else;
+
+
 
 // const seasons = prompt("Enter number of month:");
 
@@ -53,7 +60,8 @@
 //     console.log('Please, enter only number!')
 // }
 
-/*                  Task 2
+
+            /*                  Task 2
 Людина вводить вік (привести до числа), ви виводите класифікацію за віком:
 [0 - 2) baby
 [2 - 6) kinder
@@ -65,8 +73,46 @@
 404 try again
 оберіть самі потрібну конструкцію */
 
-//Version with use if...else;
 
+
+                //Version with use if...else; 
+
+
+                   //First variant
+// const inputUserAge = prompt("Enter age:");
+
+// const leadToNumber = function (value) {
+//   if (isNaN(Number(value)) || value === null || value === "" || value === " ") {
+//     return NaN;
+//   }
+//   return Number(value);
+// };
+
+// let getUserNumber = leadToNumber(inputUserAge);
+
+// if (getUserNumber >= 0 && getUserNumber < 2) {
+//   console.log("baby");
+// } else if (getUserNumber >= 2 && getUserNumber < 6) {
+//   console.log("kinder");
+// } else if (getUserNumber >= 6 && getUserNumber < 12) {
+//   console.log("child");
+// } else if (getUserNumber >= 12 && getUserNumber < 18) {
+//   console.log("teenager");
+// } else if (getUserNumber >= 18 && getUserNumber < 65) {
+//   console.log("adult");
+// } else if (getUserNumber >= 65 && getUserNumber < 100) {
+//   console.log("oldmen");
+// } else if (getUserNumber >= 100 && getUserNumber < 150) {
+//   console.log("super");
+// } else if (getUserNumber >= 150) {
+//   console.log("Dead man");
+// } else {
+//   console.log("404 try again");
+// }
+
+                        
+
+                       //Second variant
 // const inputUserAge = prompt("Enter age:");
 
 // const leadToNumber = function (value) {
@@ -108,7 +154,7 @@
 //   console.log("404 try again");
 // }
 
-/*                Task 3
+            /*                Task 3
  Людина вводить годину([0-23]), ви виводите привітання
 [7 - 11) - good morning
 [11 - 18) - good day
@@ -117,7 +163,10 @@
 усе невірне - 404 try again
 виконати 2 варіантами: через switch та if...else if...else і скажете який краще!!! */
 
+
 //Version with use switch;
+  
+
 
 //const userInputTimeOfDay = prompt("Enter time:");
 
@@ -166,7 +215,10 @@
 //     console.log("404 try again");
 // }
 
+
+
 //Version with use if...else;
+
 
 // const userInputTimeOfDay = prompt("Enter time:");
 
