@@ -6,23 +6,31 @@
 * це повинна бути функція(можливо і не одна)
  */
 
-const NUMBER_CONDITIONS = function(val) {
+//              c помощью while
+
+const NUMBER_CONDITIONS = function (val) {
   return val >= 15 && val <= 35 && val % 6 === 0;
+};
+
+let count = 1;
+while (true) {
+  const inputUserNumber = prompt("Enter number: ");
+  if (NUMBER_CONDITIONS(inputUserNumber)) {
+    console.log("You win");
+    break;
+  }
+  if (count === 3) {
+    console.log("You lose");
+    break;
+  }
+  count++;
 }
 
-// let count = 1;
-// while(true) {
-//    const inputUserNumber = prompt('Enter number: ')
-//    if(NUMBER_CONDITIONS(inputUserNumber)){
-//       console.log('You win')
-//       break;
-//    }
-//    if(count===3) {
-//       console.log('You lose')
-//       break;
-//    }
-//    count++;
-// }
+//              c помощью for ;
+
+const NUMBER_CONDITIONS = function (val) {
+  return val >= 15 && val <= 35 && val % 6 === 0;
+};
 
 for (let i = 1; i <= 3; i++) {
   const inputUserNumber = prompt("Enter number: ");
@@ -35,4 +43,56 @@ for (let i = 1; i <= 3; i++) {
   }
 }
 
+//                *функция с while
 
+const NUMBER_CONDITIONS = function (val) {
+  return val >= 15 && val <= 35 && val % 6 === 0;
+};
+
+function chekInputNumber(n) {
+  let count = n;
+  return function counter() {
+    while (true) {
+      const inputUserNumber = prompt("Enter number: ");
+      if (NUMBER_CONDITIONS(inputUserNumber)) {
+        console.log("You win");
+        break;
+      }
+      if (count === 1) {
+        console.log("You lose");
+        break;
+      }
+      count--;
+    }
+  };
+}
+
+const doFunc = chekInputNumber(3);
+
+doFunc();
+
+//                     *функция с for
+
+const NUMBER_CONDITIONS = function (val) {
+  return val >= 15 && val <= 35 && val % 6 === 0;
+};
+
+function chekInputNumber(n) {
+  let count = n;
+  return function () {
+    for (n; n > 0; n--) {
+      const inputUserNumber = prompt("Enter number: ");
+      if (NUMBER_CONDITIONS(inputUserNumber)) {
+        console.log("You win");
+        break;
+      }
+      if (count === 1) {
+        console.log("You lose");
+      }
+    }
+  };
+}
+
+const doFunc = chekInputNumber(3);
+
+doFunc();
