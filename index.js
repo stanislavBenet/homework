@@ -8,14 +8,14 @@
 
 //              c помощью while
 
-const NUMBER_CONDITIONS = function (val) {
+const numberCondition = function (val) {
   return val >= 15 && val <= 35 && val % 6 === 0;
 };
 
 let count = 1;
 while (true) {
   const inputUserNumber = prompt("Enter number: ");
-  if (NUMBER_CONDITIONS(inputUserNumber)) {
+  if (numberCondition(inputUserNumber)) {
     console.log("You win");
     break;
   }
@@ -28,24 +28,24 @@ while (true) {
 
 //              c помощью for ;
 
-const NUMBER_CONDITIONS = function (val) {
+const numberCondition = function (val) {
   return val >= 15 && val <= 35 && val % 6 === 0;
 };
 
-for (let i = 1; i <= 3; i++) {
+for (let i = 0; i < 3; i++) {
   const inputUserNumber = prompt("Enter number: ");
-  if (NUMBER_CONDITIONS(inputUserNumber)) {
+  if (numberCondition(inputUserNumber)) {
     console.log("You win");
     break;
   }
-  if (i === 3) {
+  if (i === 2) {
     console.log("You lose");
   }
 }
 
 //                *функция с while
 
-const NUMBER_CONDITIONS = function (val) {
+const numberCondition = function (val) {
   return val >= 15 && val <= 35 && val % 6 === 0;
 };
 
@@ -54,7 +54,7 @@ function chekInputNumber(n) {
   return function counter() {
     while (true) {
       const inputUserNumber = prompt("Enter number: ");
-      if (NUMBER_CONDITIONS(inputUserNumber)) {
+      if (numberCondition(inputUserNumber)) {
         console.log("You win");
         break;
       }
@@ -73,20 +73,20 @@ doFunc();
 
 //                     *функция с for
 
-const NUMBER_CONDITIONS = function (val) {
+const numberCondition = function (val) {
   return val >= 15 && val <= 35 && val % 6 === 0;
 };
 
 function chekInputNumber(n) {
-  let count = n;
+  let n;
   return function () {
     for (n; n > 0; n--) {
       const inputUserNumber = prompt("Enter number: ");
-      if (NUMBER_CONDITIONS(inputUserNumber)) {
+      if (numberCondition(inputUserNumber)) {
         console.log("You win");
         break;
       }
-      if (count === 1) {
+      if (n === 1) {
         console.log("You lose");
       }
     }
